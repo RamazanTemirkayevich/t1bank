@@ -1,0 +1,118 @@
+.video {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    padding-top: 99px;
+
+    &::before {
+        position: absolute;
+        content: '';
+
+        width: 519px;
+        height: 519px;
+
+        left: 360px;
+        top: -220px;
+
+        background: rgba(0, 41, 255, 0.45);
+        filter: blur(325px);
+    }
+
+    &__wrap {
+        margin: auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 299px;
+
+        text-align: center;
+
+        padding: 32px 16px;
+        
+        background: radial-gradient(186.72% 186.72% at 86.72% 17.97%, rgba(48, 48, 48, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        box-shadow: 0px 2.07292px 10.3646px rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(2.59115px);
+        
+        border: 0.5px solid #FFAF51;
+        border-radius: var(--br--15);
+
+        .benefits__info {
+            margin-top: 0;
+            width: 100%;
+
+            h2 {
+                margin-bottom: 16px;
+
+                font-size: 22px;
+            }
+        }
+
+        .benefits__descr {
+            margin-top: 32px;
+            
+            text-align: start;
+        }
+    }
+
+    &__box {
+        margin-left: -38px;
+
+        width: 342px;
+        height: 192px;
+
+        filter: drop-shadow(0px 0px 16.0651px rgba(255, 199, 82, 0.5));
+        border-radius: var(--br--8);
+        overflow: hidden;
+    }
+
+    &__vector {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        width: 100%;
+        height: 157px;
+        
+        overflow: hidden;
+
+        img {
+            position: absolute;
+
+            top: -90px;
+
+            width: 1099px;
+            height: 100%;
+
+            opacity: 0.2;
+            z-index: -1;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .video {
+        &::before {
+            left: 187px;
+            top: -708px;
+        }
+        
+        .button-m--primary {
+            width: 100%;
+
+            a {
+                width: 100%;
+            }
+        }
+    }
+}
