@@ -114,7 +114,7 @@
         width: 500px;
         height: 411px;
 
-        background: url(../../icons/Offer-bg2.svg) center/cover no-repeat;
+        background: url(../../icons/benefits.svg) center/cover no-repeat;
         z-index: -1;
     }
 
@@ -204,13 +204,60 @@
             display: none;
         }
 
-        &::after {
-            width: 300px;
-            height: 300px;
-            right: -629px;
-            top: -146px;
-            bottom: unset;
-            filter: blur(150px);
+        &__wrap {
+            column-gap: 34px;
+            row-gap: 40px;
+
+            &::after {
+                width: 300px;
+                height: 300px;
+                right: -629px;
+                top: -202px;
+                bottom: unset;
+                filter: blur(150px);
+            }
+        }
+
+        &__wrap-item {
+            padding: 40px 22px;
+
+            span {
+                font-size: 48px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+
+        &__info {
+            h2 {
+                font-size: 40px;
+            }
+
+            .button-m {
+                width: 361px;
+
+                a {
+                    width: 100%;
+                }
+            }
+
+            &::after {
+                bottom: -200px;
+                left: 650px;
+    
+                filter: blur(190px);
+            }
+        }
+
+        &__descr p {
+            font-size: 16px;
+        }
+
+        &__bg {
+            width: 1111px;
+            height: 650px;
         }
     }
 }

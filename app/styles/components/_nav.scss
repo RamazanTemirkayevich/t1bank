@@ -120,6 +120,14 @@
 
 @media (min-width: 1440px) {
     .nav {
-        margin-left: 381px;
+        margin-left: 347px;
+
+        &__wrap {
+            margin-left: 119px;
+        }
+
+        .button-m {
+            margin-left: 68px;
+        }
     }
 }

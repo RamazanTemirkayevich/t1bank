@@ -155,6 +155,11 @@
         &__img-wrap {
             right: 0;
             left: unset;
+
+            @media (min-width: 1024px) {
+                width: 620px;
+                height: 100%;
+            }
         }
 
         &__info {
@@ -182,7 +187,6 @@
 
         &__img-wrap {
             width: 1139px;
-            height: 100%;
         }
 
         &__info {
@@ -201,16 +205,37 @@
             }
 
             .button-m {
-                width: 100%;
+                width: 405px;
                 a {
                     width: 100%;
                 }
+            }
+
+            &::before {
+                width: 500px;
+                height: 500px;
+                top: -312px;
+                left: -544px;
+
+                filter: blur(150px);
             }
         }
 
         &__statistics,
         &__company {
             padding-left: 259px;
+        }
+
+        &__statistics-item {
+            strong {
+                font-size: 64px;
+                line-height: 77px;
+            }
+
+            span {
+                font-size: 18px;
+                line-height: 130%;
+            }
         }
     }
 }
