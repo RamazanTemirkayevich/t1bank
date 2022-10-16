@@ -204,6 +204,10 @@
             display: none;
         }
 
+        &__container {
+            gap: 120px;
+        }
+
         &__wrap {
             column-gap: 34px;
             row-gap: 40px;

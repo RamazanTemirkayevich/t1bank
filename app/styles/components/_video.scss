@@ -64,6 +64,8 @@
     }
 
     &__box {
+        position: relative;
+
         margin-left: -38px;
 
         width: 342px;
@@ -72,6 +74,22 @@
         filter: drop-shadow(0px 0px 16.0651px rgba(255, 199, 82, 0.5));
         border-radius: var(--br--8);
         overflow: hidden;
+
+        &-btn {
+            position: absolute;
+
+            top: 18%;
+            left: 32%;
+
+            border: none;
+            background: none;
+            cursor: pointer;
+
+            img {
+                width: 124px;
+                height: 124px;
+            }
+        }
     }
 
     &__vector {
@@ -144,6 +162,16 @@
             height: 372px;
 
             border-radius: 17px;
+
+            &-btn {
+                top: 30%;
+                left: 39%;
+
+                img {
+                    width: 143px;
+                    height: 143px;
+                }
+            }
         }
 
         &__vector {

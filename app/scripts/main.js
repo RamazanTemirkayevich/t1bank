@@ -1,11 +1,17 @@
 
 const menuBtn = document.querySelector('.header__burger'),
-    menu = document.querySelector('.nav'),
+    menu = document.querySelector('.nav__wrap'),
     head = document.querySelector('.header');
 
     menuBtn.onclick = function() {
         menu.classList.toggle('active'),
         head.classList.toggle('active');
+    };
+
+const vbtn = document.querySelector('.video__box-btn');
+
+    vbtn.onclick = function() {
+        vbtn.style.display = 'none';
     };
 
 // Uncomment to enable Bootstrap tooltips

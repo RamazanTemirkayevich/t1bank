@@ -61,6 +61,10 @@
     .footer {
         position: relative;
 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
         padding: 32px 272px 32px 200px;
 
         &__info {
@@ -70,6 +74,8 @@
             align-items: center;
 
             text-align: center;
+
+            max-width: 968px;
         }
 
         &__nav {

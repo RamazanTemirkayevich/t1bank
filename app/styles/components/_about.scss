@@ -1,33 +1,35 @@
 .about {
-    position: relative;
-
-    padding-top: 95px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    overflow: hidden;
-
-    &::before {
-        position: absolute;
-
-        content: '';
-
-        width: 409px;
-        height: 409px;
-
-        right: -390px;
-        top: -350px;
-        
-        background-color: rgba(0, 41, 255, 0.4);
-        filter: blur(125px);
-
-        z-index: -1;
+    &__wrap {
+        position: relative;
+    
+        padding-top: 95px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        overflow: hidden;
+    
+        &::before {
+            position: absolute;
+    
+            content: '';
+    
+            width: 409px;
+            height: 409px;
+    
+            right: -390px;
+            top: -350px;
+            
+            background-color: rgba(0, 41, 255, 0.4);
+            filter: blur(125px);
+    
+            z-index: -1;
+        }
     }
-
-    &__img-wrap {
+    
+    &__wrap-img-wrap {
         position: relative;
 
         width: 100%;
@@ -56,7 +58,7 @@
         }
     }
 
-    &__info-wrap {
+    &__wrap-info-items {
         padding: 0 16px;
 
         .benefits__info {
@@ -66,49 +68,61 @@
         }
     }
 
-    &__bg {
+    &__wrap-bg {
         display: none;
     }
 }
 
 @media (min-width: 768px) {
     .about {
-        flex-direction: row;
+        &__wrap {
+            flex-direction: row;
 
-        gap: 20px;
+            gap: 20px;
 
-        &::before {
-            right: 100px;
+            &::before {
+                right: 100px;
+            }
         }
 
-        &__info-wrap {
+        &__wrap-info-items {
             width: 100%;
         }
     }
 }
 
 @media (min-width: 1440px) {
-    .about {
-        padding: 0 322px 180px 250px;
-        &::before {
-            right: 184px;
+    .about {        
+        &__wrap {
+            padding: 0px 191px 180px 202px;
+            
+            gap: 149px;
 
-            filter: blur(190px);
+            &::before {
+                right: 184px;
+    
+                filter: blur(190px);
+            }
         }
 
-        &__img-wrap {
+        &__wrap-img-wrap {
+            img:nth-child(1) {
+                width: 406.01px;
+                height: 173.72px;
+            }
+
             img:nth-child(2) {
                 display: none;
             }
         }
 
-        &__info-wrap {
+        &__wrap-info-items {
             .benefits__info {
                 width: 100%;
             }
         }
 
-        &__wrap {
+        &__wrap-items {
             .hero__statistics {
                 padding: unset;
             }
@@ -125,7 +139,7 @@
             }
         }
 
-        &__bg {
+        &__wrap-bg {
             position: absolute;
 
             display: flex;
@@ -135,6 +149,8 @@
 
             width: 2299px;
             height: 327.04px;
+
+            z-index: -1;
         }
     }
 }
