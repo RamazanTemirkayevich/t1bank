@@ -108,6 +108,7 @@
     
             padding: 14px 0;
     
+            max-width: 770px;
             height: unset;
     
             top: 0;
@@ -141,6 +142,10 @@
     .nav {
         &__wrap {
             margin-left: 347px;
+
+            padding: 22px 0;
+
+            max-width: 970px;
         }
 
         &__wrap-menu {
