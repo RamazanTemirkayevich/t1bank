@@ -96,6 +96,8 @@
             outline: 0;
             appearance: none;
             
+            width: 100%;
+            
             background-color: transparent;
             border: none;
             cursor: pointer;
@@ -117,7 +119,7 @@
         width: 24px;
         height: 14px;
 
-        z-index: 10;
+        z-index: 11;
 
         span {
             height: 2px;
