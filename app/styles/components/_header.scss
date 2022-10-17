@@ -80,11 +80,11 @@
     }
 
     &__select {
+        position: relative;
+
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 5px;
-        padding: 10px 13px;
 
         border: 1px solid rgba(255, 255, 255, 0.25);
         border-radius: var(--br--41);
@@ -92,12 +92,14 @@
         z-index: 1;
 
         select {
+            padding: 10px 42px 10px 13px;
+
             line-height: inherit;
             outline: 0;
             appearance: none;
             
             width: 100%;
-            
+
             background-color: transparent;
             border: none;
             cursor: pointer;
@@ -107,6 +109,15 @@
             font-size: 12px;
             
             color: var(--white);
+        }
+
+        img {
+            position: absolute;
+
+            top: 35%;
+            right: 12px;
+
+            z-index: -1;
         }
     }
 

@@ -63,6 +63,8 @@
     }
     
     &__wrap-select {        
+        position: relative;
+
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -71,10 +73,12 @@
     
         border: 1px solid rgba(255, 255, 255, 0.25);
         border-radius: var(--br--41);
+
+        cursor: pointer;
     
         select {
             line-height: inherit;
-            outline: 0;
+            outline: none;
             appearance: none;
 
             width: 100%;
@@ -88,6 +92,15 @@
             
             color: var(--white);
             cursor: pointer;
+        }
+
+        img {
+            position: absolute;
+
+            top: 40%;
+            right: 20px;
+
+            z-index: -1;
         }
     }
 
@@ -133,9 +146,16 @@
         }
 
         &__wrap-select {
-            padding: 10px 12px;
+            padding: unset;
+            
+            select {
+                padding: 10px 42px 10px 12px;
+            }
 
-            gap: 10px;
+            img {
+                top: 35%;
+                right: 8px;
+            }
         }
     }
 }
